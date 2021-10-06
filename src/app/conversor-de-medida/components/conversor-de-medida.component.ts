@@ -14,8 +14,6 @@ export class ConversorDeMedidaComponent implements OnInit {
   conversao: Conversao = new Conversao('m', 'mm', 0, 0)
   tipos: string[]
   tipo: string
-  tipo_old: string;
-
 
   @ViewChild("conversaoForm", { static: true }) conversaoForm: NgForm;
 
@@ -24,15 +22,11 @@ export class ConversorDeMedidaComponent implements OnInit {
   ngOnInit(): void {
     this.listaTipos();
     this.tipo = "length"
-    this.tipo_old = this.tipo
     this.listaUnidades()
-
   }
 
   converter(): void {
-    // if(this.conversaoForm.form.valid){this.entrada_old !== this.conversao.medidaDe || this.saida_old !== this.conversao.medidaPara
     this.conversao.valor_saida = Number(this.conversaoService.converter(this.conversao));
-    // }
   }
   trocarUnidade(): void {
     let { nova_entrada, nova_saida } = JSON.parse(this.conversaoService.trocar(this.conversao.medidaDe, this.conversao.medidaPara));
@@ -45,16 +39,9 @@ export class ConversorDeMedidaComponent implements OnInit {
   }
 
   listaUnidades(): void {
-    this.medidas = this.conversaoService.listarTodos(this.tipo)
-
-    if (this.tipo_old !== this.tipo) {
-      alert(this.tipo)
-      this.tipo_old = this.tipo
       this.medidas = this.conversaoService.listarTodos(this.tipo)
       this.conversao.medidaDe=this.medidas[0].abbr
       this.conversao.medidaPara=this.medidas[1].abbr
-    }
-
   }
 
   listaTipos(): void {

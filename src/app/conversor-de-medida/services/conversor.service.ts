@@ -5,7 +5,6 @@ import * as convert_units from 'convert-units'
 @Injectable()
 export class ConversorService {
 
-
   constructor() { }
 
   converter(valor: Conversao): string {
