@@ -1,12 +1,12 @@
 
 ## 📰  A proposta 
 
-Desenvolver uma aplicação capaz de capaz de converter valores entre diversas unidades de medida
+Desenvolver uma aplicação capaz de capaz de converter valores entre diversas unidades de medida.
 
 ### 🔭  Requisitos
-1) Deve ser respeitada a natureza de cada grandeza (comprimento→comprimento, volume→volume, ...) na saída da conversão
-2) Responsividade
-3) Validação de campos (apenas numeros)
+1) Deve ser respeitada a natureza de cada grandeza (comprimento→comprimento, volume→volume, ...) na saída da conversão;
+2) Responsividade;
+3) Validação de campos (apenas numeros).
 
 ## 🧰 Tecnologias utilizadas
 - [Node.js](https://nodejs.org/en/)
@@ -16,7 +16,7 @@ Desenvolver uma aplicação capaz de capaz de converter valores entre diversas u
 
 ## 🖥 Interface
 
-O layout desenvolvido trabalha de maneira responsiva abusando do conceito *Mobile First* que o Bootstrap (framework) possui
+O layout desenvolvido trabalha de maneira responsiva abusando do conceito *Mobile First* que o Bootstrap (framework) possui.
 
 - Layout Desktop:
 <h1 align="center">
@@ -37,7 +37,7 @@ Baixe o prejeto ou clone o repositório utilizando o comando:
 $ git clone https://github.com/lucarampi/conversor-de-medida
 
 ```
-Acesse a pasta e instale as dependência do projeto com:
+Acesse a pasta e instale as dependências do projeto com:
 ```bash
 # Install the dependencies
 $ npm i or yarn
