@@ -23,7 +23,7 @@ O layout desenvolvido trabalha de maneira responsiva abusando do conceito *Mobil
     <img alt="Layout Website" src="src\assets\images\desktop_layout.png" />
 </h1>
 
--Layout Mobile:
+- Layout Mobile:
 <h1 align="center">
     <img alt="Layout Website" src="src\assets\images\mobile_layout.png" />
 </h1>
