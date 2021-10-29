@@ -1,27 +1,56 @@
-# ConversorDeMedida
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
+## 📰  A proposta 
 
-## Development server
+Desenvolver uma aplicação capaz de capaz de converter valores entre diversas unidades de medida
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### 🔭  Requisitos
+1) Deve ser respeitada a natureza de cada grandeza (comprimento→comprimento, volume→volume, ...) na saída da conversão
+2) Responsividade
+3) Validação de campos (apenas numeros)
 
-## Code scaffolding
+## 🧰 Tecnologias utilizadas
+- [Node.js](https://nodejs.org/en/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Angular 12](https://angular.io/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🖥 Interface
 
-## Build
+O layout desenvolvido trabalha de maneira responsiva abusando do conceito *Mobile First* que o Bootstrap (framework) possui
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Layout Desktop:
+<h1 align="center">
+    <img alt="Layout Website" src="src\assets\images\desktop_layout.png" />
+</h1>
 
-## Running unit tests
+-Layout Mobile:
+<h1 align="center">
+    <img alt="Layout Website" src="src\assets\images\mobile_layout.png" />
+</h1>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## 📜 Instalação e uso
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Baixe o prejeto ou clone o repositório utilizando o comando:
 
-## Further help
+```bash
+$ git clone https://github.com/lucarampi/conversor-de-medida
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+Acesse a pasta e instale as dependência do projeto com:
+```bash
+# Install the dependencies
+$ npm i or yarn
+```
+Inicie o projeto:
+```bash
+# Start the project
+$ ng s
+```
+Aguarde a compilação e acesse a aplicação em:
+
+```bash
+$ localhost:4200
+# or
+$ 127.0.0.0:4200
+```
