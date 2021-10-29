@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static(__dirname + "/dist/conversor-de-medida"));
 
 app.get("", function (req, res) {
-  res.sendFile(path.join(__dirname + "/dist/simon/index.html"));
+  res.sendFile(path.join(__dirname + "/dist/conversor-de-medida/index.html"));
 });
 
 // Inicia a aplicação pela porta configurada
